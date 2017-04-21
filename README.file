@@ -1,0 +1,30 @@
+code1 ans:
+0000000000601038 B __bss_start
+0000000000601028 D __data_start
+0000000000601028 W data_start
+0000000000601030 D __dso_handle
+0000000000601038 D _edata
+0000000000601040 B _end
+00000000004005d4 T _fini
+                 w __gmon_start__
+00000000004003a8 T _init
+00000000004005e0 R _IO_stdin_used
+                 w _ITM_deregisterTMCloneTable
+                 w _ITM_registerTMCloneTable
+                 w _Jv_RegisterClasses
+00000000004005d0 T __libc_csu_fini
+0000000000400560 T __libc_csu_init
+                 U __libc_start_main@@GLIBC_2.2.5
+0000000000400555 T main
+0000000000400400 T _start
+0000000000601038 D __TMC_END__
+000000000040052d T _Z7averageif
+00000000004004ed T _Z7averagePdRd
+
+code2 ans:
+1 8
+4 8
+4 8
+8 8
+
+因為char,int,float,double位元組數分別是1,4,4,8而取值運算子 *CPU 會把其內的位址所指示的記憶體位置當作一個 double 型態的變數 (8 個位元組) 來存取資料。
